@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 ### Advanced
 
-This example supports both one-time and sustaining donations. Users can also define a minimum donation amount and give the option to cover the processing fee.
+This example supports both one-time and monthly donations. Users can also define a minimum donation amount and give the option to cover the processing fee.
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function(){
@@ -106,44 +106,231 @@ The plugin can be opened in a modal window with a click event or displayed inlin
 
 <table>
 <tr>
+<th>
+Name
+</th>
+<th>
+Type
+</th>
+<th>
+Default
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
 <td>
-Here
+```url```
+</td>
+<td>
+string
+</td>
+<td>
+''
+</td>
+<td>
+Required. The secure base URL for an organization's LO instance.
+</td>
+</tr>
+<tr>
+<td>
+```apiKey```
+</td>
+<td>
+string
+</td>
+<td>
+''
+</td>
+<td>
+Required. Found in [site options](#prerequisites).
+</td>
+</tr>
+<tr>
+<td>
+```formId```
+</td>
+<td>
+integer
+</td>
+<td>
+''
+</td>
+<td>
+Required.
+</td>
+</tr>
+<tr>
+<td>
+```primaryCountry```
+</td>
+<td>
+string
+</td>
+<td>
+'Canada'
+</td>
+<td>
+Default selected company for donor information. "United States" or "Canada" will impact how the "State/Province" field is sorted.
+</td>
+</tr>
+<tr>
+<td>
+```displayType```
+</td>
+<td>
+string
+</td>
+<td>
+'modal'
+</td>
+<td>
+Defines how the plugin is displayed. ```"modal"``` || ```"inline"``` are the accepted values. 
+</td>
+</tr>
+<tr>
+<td>
+```donationMinimum```
+</td>
+<td>
+integer
+</td>
+<td>
+5
+</td>
+<td>
+The minimum allowed donation. This value cannot be lower than the threshold defined in Luminate Online's site options.
+</td>
+</tr>
+<tr>
+<td>
+```levelSplit```
+</td>
+<td>
+array
+</td>
+<td>
+[3, 3]
+</td>
+<td>
+['one-time', 'monthly'] The level split controls the amount of levels are for one-time and monthly donations. This should be configured to match the level's recurring behavior.
+</td>
+</tr>
+<tr>
+<td>
+```supportMonthly```
+</td>
+<td>
+boolean
+</td>
+<td>
+false
+</td>
+<td>
+If set to ```false``` all donation levels are assumed to be one-time donations. This does not override the level's recurring behavior.
+</td>
+</tr>
+<tr>
+<td>
+```monthlyFirst```
+</td>
+<td>
+boolean
+</td>
+<td>
+true
+</td>
+<td>
+Display monthly or one-time as the default giving option.
+</td>
+</tr>
+<tr>
+<td>
+```supportTribute```
+</td>
+<td>
+boolean
+</td>
+<td>
+false
+</td>
+<td>
+Display tribute giving options. Tribute data elements must also be added to the Luminate Online form.
+</td>
+</tr>
+<tr>
+<td>
+```supportEcard```
+</td>
+<td>
+boolean
+</td>
+<td>
+false
+</td>
+<td>
+Display eCard notification options. ```supportEcard``` can only be used if ```supportTribute``` is set to ```true``` ECard data elements must also be added to the Luminate Online form.
+</td>
+</tr>
+<tr>
+<td>
+```stationaryId```
+</td>
+<td>
+integer
+</td>
+<td>
+false
+</td>
+<td>
+Required for eCard notifications. If no stationary is given, eCard support will be disabled.
+</td>
+</tr>
+</tr>
+<tr>
+<td>
+```coverFee```
+</td>
+<td>
+boolean
+</td>
+<td>
+false
+</td>
+<td>
+Display checkbox for covering the processing fee.
+</td>
+</tr>
+<tr>
+<td>
+```feeType```
+</td>
+<td>
+string
+</td>
+<td>
+"percent"
+</td>
+<td>
+Define if the processing fee should be a percentage of the donation or a flat dollar amount. ```"percent"``` || ```"dollar"``` are the accepted values. 
+</td>
+</tr>
+<tr>
+<td>
+```feeAmount```
+</td>
+<td>
+integer
+</td>
+<td>
+2
+</td>
+<td>
+Define the processing fee amount in conjunction with the ```feeType```.
 </td>
 </tr>
 </table>
-  url: '',
-  apiKey: '',
-  formId: '',
-  primaryCountry: 'Canada',
-  locale: 'en_CA',
-  displayType: "modal",
-  donationMinimum: 5,
-  levelSplit: [3, 3],
-  supportMonthly: false,
-  monthlyFirst: true,
-  supportTribute: false,
-  supportEcard: false,
-  stationaryId: '',
-  supportDonor: false,
-  minimumDonation: 5,
-  coverFee: false,
-  feeType: "percent",
-  feeAmount: 2,
-  feeLabel: "I would like to help offset the transaction costs of my donation",
-  pageTitles: ["Donate", "Tribute", "eCard", "Billing", "Donor", "Payment"],
-  givingOptions: ["Give once", "Give monthly"],
-  tributeLabel: "Give in honor or in memory",
-  sameAsLabel: "Use for donor information",
-  nextButton: "Continue",
-  backButton: "Back",
-  submitButton: "Process",
-  thankYou: "<h3>Thank you!</h3><p>Thank you very much for your donation.</p><p>We are deeply grateful for your generosity and support of our efforts. Your gift has made a difference and enabled us to provide vital services to the community we serve. We count on you and people like you to ensure that we can continue providing these services.</p>",
-  headline: "Donate Today",
-  bodyText: "Support a great cause.",
-  labels: {},
-  target: "",
-  container: "",
-  reminder: true
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
