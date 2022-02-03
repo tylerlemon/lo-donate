@@ -121,7 +121,7 @@ Description
 </tr>
 <tr>
 <td>
-```url```
+url
 </td>
 <td>
 string
@@ -135,7 +135,7 @@ Required. The secure base URL for an organization's LO instance.
 </tr>
 <tr>
 <td>
-```apiKey```
+apiKey
 </td>
 <td>
 string
@@ -149,7 +149,7 @@ Required. Found in [site options](#prerequisites).
 </tr>
 <tr>
 <td>
-```formId```
+formId
 </td>
 <td>
 integer
@@ -163,7 +163,7 @@ Required.
 </tr>
 <tr>
 <td>
-```primaryCountry```
+primaryCountry
 </td>
 <td>
 string
@@ -177,7 +177,7 @@ Default selected company for donor information. "United States" or "Canada" will
 </tr>
 <tr>
 <td>
-```displayType```
+displayType
 </td>
 <td>
 string
@@ -186,12 +186,12 @@ string
 'modal'
 </td>
 <td>
-Defines how the plugin is displayed. ```"modal"``` || ```"inline"``` are the accepted values. 
+Defines how the plugin is displayed. "modal" || "inline" are the accepted values. 
 </td>
 </tr>
 <tr>
 <td>
-```donationMinimum```
+donationMinimum
 </td>
 <td>
 integer
@@ -205,7 +205,7 @@ The minimum allowed donation. This value cannot be lower than the threshold defi
 </tr>
 <tr>
 <td>
-```levelSplit```
+levelSplit
 </td>
 <td>
 array
@@ -219,7 +219,7 @@ array
 </tr>
 <tr>
 <td>
-```supportMonthly```
+supportMonthly
 </td>
 <td>
 boolean
@@ -228,12 +228,12 @@ boolean
 false
 </td>
 <td>
-If set to ```false``` all donation levels are assumed to be one-time donations. This does not override the level's recurring behavior.
+If set to false all donation levels are assumed to be one-time donations. This does not override the level's recurring behavior.
 </td>
 </tr>
 <tr>
 <td>
-```monthlyFirst```
+monthlyFirst
 </td>
 <td>
 boolean
@@ -247,7 +247,7 @@ Display monthly or one-time as the default giving option.
 </tr>
 <tr>
 <td>
-```supportTribute```
+supportTribute
 </td>
 <td>
 boolean
@@ -261,7 +261,7 @@ Display tribute giving options. Tribute data elements must also be added to the 
 </tr>
 <tr>
 <td>
-```supportEcard```
+supportEcard
 </td>
 <td>
 boolean
@@ -270,12 +270,12 @@ boolean
 false
 </td>
 <td>
-Display eCard notification options. ```supportEcard``` can only be used if ```supportTribute``` is set to ```true``` ECard data elements must also be added to the Luminate Online form.
+Display eCard notification options. supportEcard can only be used if supportTribute is set to true ECard data elements must also be added to the Luminate Online form.
 </td>
 </tr>
 <tr>
 <td>
-```stationaryId```
+stationaryId
 </td>
 <td>
 integer
@@ -290,7 +290,7 @@ Required for eCard notifications. If no stationary is given, eCard support will 
 </tr>
 <tr>
 <td>
-```coverFee```
+coverFee
 </td>
 <td>
 boolean
@@ -304,7 +304,7 @@ Display checkbox for covering the processing fee.
 </tr>
 <tr>
 <td>
-```feeType```
+feeType
 </td>
 <td>
 string
@@ -313,12 +313,12 @@ string
 "percent"
 </td>
 <td>
-Define if the processing fee should be a percentage of the donation or a flat dollar amount. ```"percent"``` || ```"dollar"``` are the accepted values. 
+Define if the processing fee should be a percentage of the donation or a flat dollar amount. "percent" || "dollar" are the accepted values. 
 </td>
 </tr>
 <tr>
 <td>
-```feeAmount```
+feeAmount
 </td>
 <td>
 integer
@@ -327,7 +327,7 @@ integer
 2
 </td>
 <td>
-Define the processing fee amount in conjunction with the ```feeType```.
+Define the processing fee amount in conjunction with the feeType.
 </td>
 </tr>
 </table>
