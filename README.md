@@ -106,14 +106,14 @@ The plugin can be opened in a modal window with a click event or displayed inlin
 Add an element on the page with the default target selector ```[data-dfs-target]``` or define a new target
 
 ```
-<button [data-dfs-target]>Donate Today</button>
+<button data-dfs-target>Donate Today</button>
 ```
 
 #### Inline
 Add an element on the page with the default container selector ```[data-dfs-container]``` or define a new container
 
 ```
-<div [data-dfs-container]></div>
+<div data-dfs-container></div>
 ```
 
 ## Options
@@ -158,7 +158,7 @@ string
 ''
 </td>
 <td>
-Required. Found in [site options](#prerequisites).
+Required. Found in Luminate Online's site options.
 </td>
 </tr>
 <tr>
