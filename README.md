@@ -324,7 +324,7 @@ feeType
 string
 </td>
 <td>
-"percent"
+'percent'
 </td>
 <td>
 Define if the processing fee should be a percentage of the donation or a flat dollar amount. "percent" || "dollar" are the accepted values. 
@@ -352,7 +352,7 @@ target
 string
 </td>
 <td>
-"[data-dfs-target]"
+'[data-dfs-target]'
 </td>
 <td>
 Define a target to open a modal on click.
@@ -366,7 +366,7 @@ container
 string
 </td>
 <td>
-"[data-dfs-container]"
+'[data-dfs-container]'
 </td>
 <td>
 Define a container for the form be rendered in.
