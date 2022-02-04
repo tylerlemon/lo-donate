@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var form = new DFSDonationForm({
         url: 'https://secure2.convio.net/myorg/site', // Secure domain for LO Instance
         apiKey: '123456789',
-        formId: '1234' // Shadow form created in LO,
+        formId: '1234', // Shadow form created in LO
         levelSplit: [4, 4], // Define levels for [one-time, monthly]
         supportMonthly: true,
         minimumDonation: 10,
