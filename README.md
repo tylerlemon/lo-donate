@@ -102,6 +102,20 @@ document.addEventListener('DOMContentLoaded', function(){
 ### Modal vs Inline
 The plugin can be opened in a modal window with a click event or displayed inline on a page. The ```displayType``` will accept either ```"modal"``` or ```"inline"``` as a valid value. If ```"modal"``` is given a ```target``` must be defined. Alternatively, with ```"inline"``` the ```container``` option must have an element present on the page.
 
+#### Modal
+Add an element on the page with the default target selector ```[data-dfs-target]``` or define a new target
+
+```
+<button [data-dfs-target]>Donate Today</button>
+```
+
+#### Inline
+Add an element on the page with the default container selector ```[data-dfs-container]``` or define a new container
+
+```
+<div [data-dfs-container]></div>
+```
+
 ## Options
 
 <table>
@@ -328,6 +342,34 @@ integer
 </td>
 <td>
 Define the processing fee amount in conjunction with the feeType.
+</td>
+</tr>
+<tr>
+<td>
+target
+</td>
+<td>
+string
+</td>
+<td>
+"[data-dfs-target]"
+</td>
+<td>
+Define a target to open a modal on click.
+</td>
+</tr>
+<tr>
+<td>
+container
+</td>
+<td>
+string
+</td>
+<td>
+"[data-dfs-container]"
+</td>
+<td>
+Define a container for the form be rendered in.
 </td>
 </tr>
 </table>
