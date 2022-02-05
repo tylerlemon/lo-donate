@@ -28,12 +28,12 @@ Add the following items to the head of your page.
 
 ```
 <!-- DFS CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tylerlemon/lo-donate@v0.1.4-alpha/bundle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tylerlemon/lo-donate/bundle.css">
 ```
 
 ```
 <!-- DFS JS -->
-<script src="https://cdn.jsdelivr.net/gh/tylerlemon/lo-donate@v0.1.4-alpha/bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/tylerlemon/lo-donate/bundle.js"></script>
 ```
 
 ## Usage
